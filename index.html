@@ -1,0 +1,797 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web App</title>
+<script type="text/javascript" charset="utf-8" src="cordova-2.7.0.js"></script>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page" >
+	<div data-role="header" class="customheader">
+		<a href="#page" data-icon="home" class="ui-btn-active ui-state-persist">Home</a>
+        <h1>
+         I'm Tayo Fatoki
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+	</div>
+  <div  align="center" class="slidersdiv">
+
+<img src="jquery-mobile/images/2013-02-24-1228.jpg" width="300" height="400"> 
+    <p style=" background-color: #000 ">
+Welcome to my app,i know its boring looking at me but just enter the zanga and see what under the hood.... 
+</p>
+
+</div>
+    
+	<div class="contentbg" data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2" data-transition="slideup">Enter my zanga</a></li>
+        </ul>		
+	</div>
+	<div data-role="footer"data-position="fixed" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera" data-transition="flip">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+	</div>
+</div>
+
+
+<div data-role="page" id="page2">
+	<div data-role="header" class="customheader">
+		<a href="#page" data-icon="home">Home</a>
+        <h1>
+         My Zanga
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+        </div>
+	<div class="contentbg" data-role="content">
+      <ul data-role="listview">
+        <li><a href="#aboutme">
+          <h3>Who am i ?</h3>
+          <p>About Tayo Fatoki</p>
+        </a></li>
+        <li><a href="#resume" data-transition="slidedown">
+          <h3>Resume & Skills</h3>
+          <p>My Resume/CV</p>
+        </a></li>
+        <li><a href="#myguys" data-transition="pop">
+          <h3>My Guys</h3>
+          <p>Real Men</p>
+        </a></li>
+        <li><a href="#gallery" data-theme="b" data-transition="flip">
+          <h3>Gallery</h3>
+          <p>Pictures and Portfolio</p>
+        </a></li>
+        <li><a href="#contact">
+          <h3>Contact</h3>
+          <p>Contact Me</p>
+        </a></li>
+      </ul>
+    Content </div>
+    <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#page2" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+</div>
+
+
+<!------------------------------------------About STARTS ----------------------------------->
+<div data-role="page" id="aboutme">
+  <div data-role="header" class="customheader" >
+    <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Who am i ?
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+      </div>
+   <div class="contentbg" data-role="content">
+   <h3 class="ui-bar ui-bar-a ui-corner-all">Simly Innovative !</h3>
+   <br/>
+      <div class="ui-body ui-body-a ui-corner-all">
+          <p>One very inquisitive guy when it comes to IT. Young face older bones loves good food ( especilally pounded yam and ofe owerri with snail,pomo,catfish head, goat head, shaki, shrimps, bush meat, pangolin meat, mushroom and "CHILLED PINEAPPLE Juice" ) . <br/>
+          I like hanging out with friends when i'm free or play strategy games when alone. <br/>
+          Need to find out more ? Ask tayo.digicutek.com</p>
+      </div>
+   </div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#page2" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+</div>
+  
+
+<!------------------------------------------Resume STARTS ----------------------------------->
+<div data-role="page" id="resume">
+  <div data-role="header" class="customheader" >
+    <a href="#page" data-icon="home">Home</a>
+        <h1>
+         My Resume/CV
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+  </div>
+  <div class="contentbg" data-role="content">
+ <div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-a">
+    <h3>Objective</h3>
+  </div>
+  <div class="ui-bar-b">
+    <p>Building a technical-oriented career with a zeal to  increase my skills and performance to communicate my ideas and views for overall business developments, accelerated growth and efficient teamwork, therefore yielding job satisfaction.</p>
+  </div>
+  <p></p>
+  <h3 class="ui-bar ui-bar-a ui-corner-all">Technical Skills</h3>
+      <div class="ui-body">
+       </div>
+</div>
+<div data-role="collapsible" data-inset="false">
+    <h3>Web & Application Development</h3>
+    <ul data-role="listview">
+        <li>Knowledge and experience of Adobe Dreamweaver, Photoshop, Illustrator, Fireworks, Flash, InDesign, CorelDraw.</li>
+        <li>Ability to Increase online presence of a website using search engine optimization.</li>
+        <li>Knowledge and experience in designing and planning of mobile appilcations for IOS, Blackberry,Andriod,Windows,Symbian and Bada Phones.</li>
+        <li>Over 2years experience in designing webpages with html,css,php,javascript,ajax and jquery.</li>
+        <li>Knowledge and experience of Wordpress and Joomla.</li>
+        <li>Ability to use google analytic tools to optimize site maintainance.</li>
+        <li>Knowledge and experience of MYSQL Data base and cpanel management.</li>
+        <li>Knowledge of designing html 5 platform games.</li>
+        <li>Ability to use AutoCAD for 2D design and 3D modeling.</li>
+    </ul>
+</div><!-- /collapsible -->
+<div data-role="collapsible" data-inset="false">
+    <h3>Telecoms</h3>
+    <ul data-role="listview">
+        <li>Experience in Microwave installation, configuration and commissioning and site integration.</li>
+        <li>Over Two years Knowledge and experience in Huawei BTS installation and troubleshooting.</li>
+        <li>Knowledge and experience of Radio frequency Inspection, LOS Survey and Analysis.</li>
+        <li>Ability to perform Drive Test and analysis using software like TEMS.</li>
+        </ul>
+</div><!-- /collapsible -->
+<div data-role="collapsible" data-inset="false">
+    <h3>Networking</h3>
+    <ul data-role="listview">
+        <li>Knowledge and experience in designing, installing, and configuring Local Area Networks and designing and simulating Wide Area Networks in a lab environment.</li>
+        <li>Over two years’ experience programming routers and switches, and performing troubleshooting tasks for connectivity, speed, and packet loss issues.</li>
+        <li>Knowledge and experience of using Routed Protocols: TCP/IP, IPX/SPX, and AppleTalk; and Routing Protocols: RIP, IGRP, EIGRP, and OSPF.</li>
+          </ul>
+</div><!-- /collapsible -->
+<br/>
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-a">
+    <h3>Certification</h3>
+  </div>
+  <div class="ui-body ui-body-a">
+    <p><li><strong>WANI</strong>: HUAWEI WEST    AFRICA-NIGERIA, certified BSS Engineer (WANI20130027)<strong></strong></li></p>
+  </div>
+</div>
+<p></p>
+    <div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-a">
+    <h3>Education</h3>
+  </div>
+    <div class="ui-body ui-body-a">
+    <p><strong>2013 to 2016      National Open University        Victoria Island, Lagos</strong>
+     <ul>
+     <li>B.Sc. in view, Communication Technology.</li>
+     </ul>
+    </p>
+    
+  </div>
+  <div class="ui-body ui-body-a">
+    <p><strong>2009 – 2011 Yaba College of Technology   Yaba, Lagos.</strong>
+     <ul>
+     <li>National Diploma (ND) in Mechanical Engineering.</li>
+            <li>Upper credit.</li>
+     </ul>
+    </p>
+    </div>
+    <div class="ui-body ui-body-a">
+  <p><strong>2000 - 2006 Federal Government    College   Ikirun, Osun    State.</strong>
+     <ul>
+     <li>West African    Examination Council (WAEC).</li> 
+     </ul>
+    </p>
+    </div>
+    <div class="ui-body ui-body-a">
+  <p><strong>1994 - 2000  BOLS International Primary  School  Ipaja, Lagos State.</strong>
+     <ul>
+     <li>First School Leaving Certificate </li>
+     </ul>
+    </p>
+    </div>
+</div>
+<br/>
+<h3 class="ui-bar ui-bar-a ui-corner-all">Employment History</h3>
+      <div class="ui-body">
+       
+<div data-role="collapsible" data-inset="false">
+    <h3>Assistant Project Manager, Digicube Tek</h3>
+    <ul data-role="listview"><br/>
+    <p><strong>Lagos Island, Lagos. August    2013 till date.</strong></p>
+    <br/>
+        <li>Planned the development of the on-going official mobile app for Winners Chapel World Wide.</li>
+        <li>Coordinated the team of web developers that are designing the official website and account portal of members of FEDEDRAL FIRE SREVICE COOPRATIVE MULTIPURPOSE SOCIETY.
+</li>
+        <li>Designed CRM and ERP solutions to suite client requirement.</li>
+        <li>The official website of Headstart Consulting.</li>
+        <li>Designed a web solution that boosts learning via internet for secondary schools (LMS).</li>
+        <li>Designed a web solution that boosts learning via internet for secondary schools (LMS).</li>
+        <li>Supervised the development and designing of over 40 websites and optimized them for mobile compatibility.</li>
+        <li>Monitored the development of Microwave Installation and commission of Ceragon-Globalcom projects as 3rd party sub-contractor.</li>
+        </ul>
+</div><!-- /collapsible -->
+<div data-role="collapsible" data-inset="false">
+    <h3>IT Specialist, Nesburg</h3>
+    <ul data-role="listview"><br/>
+    <p><strong>Nesburg School of Business & Management,<br/>
+    Ikeja, Lagos. <br/>
+    June, 2013 to August, 2013.</strong></p><br/>
+ <li>Performed maintenance on a Web Portal for Students & modified existing Web Site to suit Management Purposes. </li>
+<li>Made plans for mobile version of the website to improve mobile user experiences.</li>
+<li>Performed updates, backups and edited web page codes to increase search engine optimization.</li>
+        </ul>
+</div><!-- /collapsible -->
+<div data-role="collapsible" data-inset="false">
+    <h3>Project Closure Personnel</h3>
+    <ul data-role="listview"><br/>
+    <p><strong>Handover Telecoms , <br/>
+    Lekki ,Lagos,
+    <br/> May 2013</strong><br/>
+   <li>Pushed for closure and sign-off across all on-going projects</li>
+<li>Designed and implemented trackers to ensure prompt closure of projects.</li>
+ </ul>
+</div><!-- /collapsible -->
+<div data-role="collapsible" data-inset="false">
+    <h3>Quality Engineer</h3>
+    <ul data-role="listview"><br/>
+    <p><strong>Handover Telecoms , <br/>
+    Lekki ,Lagos,
+    <br/>Feb 2013 to May, 2013</strong><br/>
+   <li>Strategize and Maintain Customer Quality on all projects.</li>
+<li>Assisted in the development and implementation of quality audit systems, processes and products.</li>
+<li>Performed task of ensuring EHS standards of delivery by coordinating with quality unit teams and organized training programs for new technicians and engineers to be competent in given tasks to achieve targets with efficiency and quality.
+</li>
+ </ul>
+</div><!-- /collapsible -->
+<div data-role="collapsible" data-inset="false">
+    <h3>Network Support</h3>
+    <ul data-role="listview"><br/>
+    <p><strong>Handover Telecoms , <br/>
+    Lekki ,Lagos,
+    <br/>Feb 2013 to May, 2013</strong><br/>
+   <li>Maintained router and switch configurations, updated and changed configurations depending on corporate requirements and documentation.</li>
+<li>Worked as a team member with other technical staffs, such as systems to ensure connectivity and compatibility between systems.</li>
+<li>Installed, upgraded and configured network printing, directory structures, user access, security, software and file services.</li>
+<li>Maintained confidentiality with regard to the information being processed, stored or accessed by the network.</li>
+<li>Gained effective network troubleshooting and network problem solving skills with software, server, and hardware devices.</li>
+<li>Analyzed and resolved technical problems for established networks.</li>
+ </ul>
+</div><!-- /collapsible -->
+<div data-role="collapsible" data-inset="false">
+    <h3>Technical Trainee</h3>
+    <ul data-role="listview"><br/>
+    <p><strong>Handover Telecoms , <br/>
+    Lekki ,Lagos,
+    <br/>2011  to 2012</strong><br/>
+   <li>Performed Installation, Configuration and commissioning of Microwave links, BTS installation and troubleshooting.</li>
+<li>Performed External Alarm termination and clearance, RFI/LOS survey, 2G & 3G Drive Test/SSV.</li>
+<li>Performed Microwave Frequency scan and analysis, Sweep Test, Feeder cable Installation and plinth casting for BTS Installation.</li>
+ </ul>
+</div><!-- /collapsible -->
+<div data-role="collapsible" data-inset="false">
+    <h3>Trainee Machinist</h3>
+    <ul data-role="listview"><br/>
+    <p><strong>Davids Machinery<br/>
+     and Repairs , <br/>
+    ,Lagos.
+    <br/>2010</strong><br/>
+   <li>Performed basic machining techniques such as turning, facing and milling during fabrication of mechanical components/parts in the work shop.</li>
+ </ul>
+</div><!-- /collapsible -->
+<div data-role="collapsible" data-inset="false">
+    <h3>Science Teacher</h3>
+    <ul data-role="listview"><br/>
+    <p><strong>Kenfol Nursery,<br/> 
+    Primary and Secondary<br/> 
+    School Lagos,<br/>
+    2008 to 2009</strong><br/>
+   <li>Tutored students in Subjects such as Mathematics, Physics, Chemistry, Biology, Geography and Further Mathematics. 
+</li>
+ </ul>
+</div><!-- /collapsible -->
+</div>
+<div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-a">
+    <h3>Programming Languages</h3>
+  </div>
+  <div class="ui-bar-d">
+  <ul>
+    <li>HTML</li>
+	<li>XHTML</li>
+	<li>CSS</li>
+	<li>PHP</li>
+	<li>JavaScript</li>
+</ul>
+  </div>
+  <p></p>
+  <div class="ui-corner-all custom-corners">
+  <div class="ui-bar ui-bar-a">
+    <h3>Download Resume</h3>
+  </div>
+  <div class="ui-bar-d">
+  <p align="center">Download My Full Resume<a href="#"> here</a></p>
+  </div>
+<p></p>
+  <div data-role="footer" data-position="fixed" class="customheader">
+		<div data-role="navbar" data-position="fixed">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#page2" data-role="button" data-icon="back" data-iconpos="notext">Button</a></h4>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+
+
+<!------------------------------------------SKILLS STARTS 
+sample space
+--------------------------------------------------------------------->
+<div data-role="page" id="myguys">
+  <div data-role="header" class="customheader" >
+  <a href="#page" data-icon="home">Home</a>
+        <h1>
+         My Guys
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+        </div>
+  <div class="contentbg" data-role="content">
+    <ul data-role="listview" data-inset="true">
+      <li><a href="#natik">Natik'Blackman</a></li>
+      <li><a href="#az">Hayzed</a></li>
+      <li><a href="#choko">Choko'Ti</a></li>
+      <li><a href="#kas">Kas</a></li>
+      <li><a href="#sirmuta">Sir Muttarh</a></li>
+      <li><a href="#tdon">Teedon</a></li>
+      <li><a href="#francis">Fao</a></li>
+      <li><a href="#shegs">Shegs</a></li>
+      <li><a href="#mose">Mosy Guy</a></li>
+      <li><a href="#nat">Natefizzy</a></li>
+      </ul>
+  
+  
+  
+  </div>
+ <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#page2" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+</div>
+  </div>
+</div>
+<!------------------------------------------my guys contentS ----------------------------------->
+
+
+<div data-role="page" id="natik">
+  <div data-role="header" class="customheader" >
+    <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Natik'Blackman
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+      </div>
+   <div class="contentbg" data-role="content">
+   <h3 class="ui-bar ui-bar-a ui-corner-all">Real Name: Ololade Natik Coker</h3>
+   <br/>
+   <img src="jquery-mobile/images/Cheerful_Chef_Cartoon_Character_Tiny.jpg" width="145" height="100">
+<div class="ui-body ui-body-a ui-corner-all">
+        <p>Yonger brother to my buddy, Mosebolatan Coker, Natik is what i call Mr Swagzzz. He loves fashin and life style, currently CEO of his clothing line COKESON WARES. <br/><br/>
+          If theres anythin you need about anything lifestyle Holla @ ma boi <br/>
+          </p>
+      </div>
+   </div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#myguys" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="az">
+  <div data-role="header" class="customheader" >
+    <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Hayzed
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+      </div>
+   <div class="contentbg" data-role="content">
+   <h3 class="ui-bar ui-bar-a ui-corner-all">Real Name: Busari Azeez Olamide</h3>
+   <br/>
+   <p align="center"><img src="jquery-mobile/images/az.jpg" width="300" height="400"></p>
+<div class="ui-body ui-body-a ui-corner-all">
+        <p>This is one of the best BI's in Nigeria,( no jokes) always busy but i keep wondering how he still has time to live more social most busy guys i know. This guy is awesome when it comes to human relationship management, the ****s can testify to his superhuman powers. <br/><br/>
+          With no much exerggeration, his simple and very fun to chill with <br/>
+          </p>
+      </div>
+   </div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#myguys" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="choko">
+  <div data-role="header" class="customheader" >
+    <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Choko'Ti
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+      </div>
+   <div class="contentbg" data-role="content">
+   <h3 class="ui-bar ui-bar-a ui-corner-all">Real Name: Adedayo Adeyemi</h3>
+   <br/>
+   <img src="jquery-mobile/images/Cheerful_Chef_Cartoon_Character_Tiny.jpg" width="145" height="100">
+<div class="ui-body ui-body-a ui-corner-all">
+        <p>CHOKO'TI ALAGBEDE ORUN (Heaven Blacksmith), as oppose to his gentle looks, dayo is one of the craziest dudes i know. When he gets excited, the ground around gets excited. The only thing that goes in line with is look is his heart. His not biased or selfish and he appreciates sincer relationships. <br/><br/>
+         Dayo loves to dance when excited and play computer games when bored<br/>
+          </p>
+      </div>
+   </div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#myguys" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+</div>
+
+<div data-role="page" id="kas">
+  <div data-role="header" class="customheader" >
+    <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Kas
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+      </div>
+   <div class="contentbg" data-role="content">
+   <h3 class="ui-bar ui-bar-a ui-corner-all">Real Name: Kasunmu Olamilekan</h3>
+   <br/>
+   <img src="jquery-mobile/images/Cheerful_Chef_Cartoon_Character_Tiny.jpg" width="145" height="100">
+<div class="ui-body ui-body-a ui-corner-all">
+        <p>Olukasper Agbaoye !! My buddy Don Kaspyro is a gentle with policy, easy going but very calculative in his risk and judment. Dislikes lies and deceit but appreciates true friendship alot.  
+         <br/><br/>
+         Kas is d mainman @ Alkas Wares as well as the Kasumu dynasty .<br/>
+          </p>
+      </div>
+   </div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#myguys" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+</div>
+
+<div data-role="page" id="sirmuta">
+  <div data-role="header" class="customheader" >
+    <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Sir Muttarh
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+      </div>
+   <div class="contentbg" data-role="content">
+   <h3 class="ui-bar ui-bar-a ui-corner-all">Real Name: Adekojo Muftau Femi</h3>
+   <br/>
+   <img src="jquery-mobile/images/Cheerful_Chef_Cartoon_Character_Tiny.jpg" width="145" height="100">
+<div class="ui-body ui-body-a ui-corner-all">
+        <p>Hmmmmmmmmm Sir Muffy!!Behind a smoke there a fire(... African Adage), behing the name Sir Muttarh, is a man of great capabilties, often time people tend to get confused about him but if you truly look deep, this guy is outstanding. Whenever he puts his mind to anything, he not sleeping till its done. He's also my very good teacher in a subject of rare knowlege. Wanna know more about this subject? Ask him ur self. 
+         <br/><br/>
+         He's currently the head of operations and strategy AM Computers.<br/>
+          </p>
+      </div>
+   </div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#myguys" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+</div>
+
+<div data-role="page" id="tdon">
+  <div data-role="header" class="customheader" >
+    <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Teedon
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+      </div>
+   <div class="contentbg" data-role="content">
+   <h3 class="ui-bar ui-bar-a ui-corner-all">Real Name: Allen Oluwatobi</h3>
+   <br/>
+   <img src="jquery-mobile/images/Cheerful_Chef_Cartoon_Character_Tiny.jpg" width="145" height="100">
+<div class="ui-body ui-body-a ui-corner-all">
+        <p> CEO of one of the best blogs in Nigeria, INFORISTC BLOG. When it comes to mobile and pc dont wait twice google inforistic blog to get more info. An avid blogger and friend i've known from the era of KUVUKI LAND, this guy is so smart that you can never really come close to his thoughts. I think his a proper defination of a BADO.
+         <br/><br/>
+          Brilliant and witty Teedon doesnt take nasty attitudes from anyone.<br/>
+          </p>
+      </div>
+   </div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#myguys" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="francis">
+  <div data-role="header" class="customheader" >
+    <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Fao
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+      </div>
+   <div class="contentbg" data-role="content">
+   <h3 class="ui-bar ui-bar-a ui-corner-all">Real Name: Francis Boboli Collins</h3>
+   <br/>
+   <img src="jquery-mobile/images/Cheerful_Chef_Cartoon_Character_Tiny.jpg" width="145" height="100">
+<div class="ui-body ui-body-a ui-corner-all">
+        <p> Fao Lisky, my very sure padi since yct is a very lively and fun to be with personalty. A selfless giver tht loves to sacrifice his pleaseure for the wellbeing of others. Francis likes to cook in large portions and consumes like a lion (That explains why). 
+         <br/><br/>
+     Apart from been a lively person, He's Mechanical Engineer of fine quality.<br/>
+          </p>
+      </div>
+   </div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#myguys" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+</div>
+
+<div data-role="page" id="shegs">
+  <div data-role="header" class="customheader" >
+    <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Shegs
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+      </div>
+   <div class="contentbg" data-role="content">
+   <h3 class="ui-bar ui-bar-a ui-corner-all">Real Name: Olufowose Daniel Segun</h3>
+   <br/>
+   <img src="jquery-mobile/images/Cheerful_Chef_Cartoon_Character_Tiny.jpg" width="145" height="100">
+<div class="ui-body ui-body-a ui-corner-all">
+        <p>My Old friend from ages, Segun is a talented fashion desingner, Model, Artist and business partner. He likes to make and implement creative career plans and build networks of positive people around him.
+         <br/><br/>
+         In his special time, he loves reading the bible .<br/>
+          </p>
+      </div>
+   </div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#myguys" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="mose">
+  <div data-role="header" class="customheader" >
+    <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Mosy Guy
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+      </div>
+   <div class="contentbg" data-role="content">
+   <h3 class="ui-bar ui-bar-a ui-corner-all">Real Name: Mosebolatan Coker</h3>
+   <br/>
+   <p align="center">
+   <img src="jquery-mobile/images/mose.jpg" width="300" height="225">
+   </p>
+<div class="ui-body ui-body-a ui-corner-all">
+        <p>Staright Man, Straight Ideas. Mosy. This is one guy that is never pessimistic of any situation he finds himself. I strong fighter for his dreams and beliefs as well as a visionary leader for this generation, i'm optimistic that He's one to thoes that would turn the faith of this country around someday.  
+         <br/><br/>
+         In his leisure time, Mosi Guy is love listening to Fela and Barrister. <br/>
+          </p>
+      </div>
+   </div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#myguys" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+</div>
+
+<div data-role="page" id="nat">
+  <div data-role="header" class="customheader" >
+    <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Natefizzy
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+      </div>
+   <div class="contentbg" data-role="content">
+   <h3 class="ui-bar ui-bar-a ui-corner-all">Real Name: Odjegururu Nathaniel</h3>
+   <br/>
+   <p align="center">
+   <img src="jquery-mobile/images/2013-04-18-2839.jpg" width="250" height="445">
+   </p>
+<div class="ui-body ui-body-a ui-corner-all">
+        <p>Nate-Goody-Goody. Engineer with class. Fineboy Project Manager. He's a calm aand smart guy. Loves to hangout with great minds. A very disciplined witness but socially balanced. 
+         <br/><br/>
+         Nathan likes listenint to cool music and looking classy.<br/>
+          </p>
+      </div>
+   </div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#myguys" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+</div>
+
+
+<!------------------------------------------gallery STARTS ----------------------------------->
+<div data-role="page" id="gallery">
+  <div data-role="header" class="customheader" >
+        <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Gallery
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+     </div>
+  <div class="contentbg" data-role="content">
+  <p align="center">
+  <img src="jquery-mobile/images/thickbox_demo_thumb1.jpg" width="100" height="66"> <br/>
+  Just a sample image page</p>
+  </div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#page2" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+	</div>
+
+<!------------------------------------------contact STARTS ----------------------------------->
+<div data-role="page" id="contact">
+  <div data-role="header" class="customheader" >
+  <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Contact Me
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" >info</a>
+      </div>
+  <div class="contentbg" data-role="content">
+  
+  Send me a message
+    <div data-role="fieldcontain">
+      <label for="textinput">Name:</label>
+      <input type="text" name="textinput" id="textinput" value=""  />
+       <label for="textinput">Phone Number:</label>
+      <input type="text" f name="textinput" id="textinput" value=""  />
+       <label for="textarea">Message:</label>
+        <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+        <input type="submit" formmethod="post" value="Submit" />
+        
+        Click submitt and return
+        
+         </div>
+  </div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#page2" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+	</div>
+ 
+    
+
+<!------------------------------------------info STARTS ----------------------------------->
+<div data-role="page" id="info">
+  <div data-role="header" class="customheader" >
+  <div data-role="header" class="customheader" >
+    <a href="#page" data-icon="home">Home</a>
+        <h1>
+         Info about this app
+        </h1>
+        <a href="#info" data-icon="info" data-transition="pop" class="ui-btn-active ui-state-persist" >info</a>
+      </div>
+      </div>
+  <div class="contentbg" data-role="content">Content</div>
+  <div data-role="footer" class="customheader" >
+		<div data-role="navbar">
+      <ul>
+        <li><a href="#gallery" data-icon="camera">Gallery</a></li>
+        <li><a href="#contact" data-icon="user">Contact</a></li>
+        </ul>
+    </div>
+    <h4><a href="#page2" data-role="button" data-icon="back" data-iconpos="notext" >Button</a></h4>
+	</div>
+	</div>
+
+
+<!------------------------------------------new page STARTS ----------------------------------->
+
+
+</body>
+</html>
